@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothActivity"
+    android:background="@color/colorBackground">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bluetoothToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TableLayout
+        android:id="@+id/bluetoothPairedTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bluetoothToolbar"
+        android:stretchColumns="0,1,2"
+        android:background="@color/colorSecondary"
+        android:elevation="2dp">
+
+        <TableRow
+            android:id="@+id/trIsEnabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvIsEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="@dimen/textSizeDefault"
+                android:textStyle="bold"
+                android:text="@string/txtIsEnabled"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <Switch
+                android:id="@+id/swtcEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trIsVisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvIsVisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:text="@string/txtIsVisible"
+                android:textSize="@dimen/textSizeDefault"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <Switch
+                android:id="@+id/swtcVisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trListPairedDevices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground">
+
+            <TextView
+                android:id="@+id/tvListPairedDevices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/textSizeDefault"
+                android:text="@string/txtListPairedDevices"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_bluetooth_black_24dp"
+                android:elevation="@dimen/sizeElevButton"
+                android:text="@string/txtShow"
+                android:theme="@style/LauncherTheme.PrimaryButton"
+                app:layout_constraintBaseline_toBaselineOf="@+id/btnSensors"
+                app:layout_constraintEnd_toStartOf="@+id/btnSensors"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/pairedListView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/bluetoothPairedTableLayout"
+        android:background="@color/colorBackground" >
+
+    </ListView>
+
+    <TableLayout
+        android:id="@+id/bluetoothTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pairedListView"
+        android:stretchColumns="0,1,2"
+        android:background="@color/colorSecondary"
+        android:elevation="2dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvListBluetoothDevices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/textSizeDefault"
+                android:text="@string/txtListBluetoothDevices"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_bluetooth_black_24dp"
+                android:elevation="@dimen/sizeElevButton"
+                android:text="@string/txtScan"
+                android:theme="@style/LauncherTheme.PrimaryButton"
+                app:layout_constraintBaseline_toBaselineOf="@+id/btnSensors"
+                app:layout_constraintEnd_toStartOf="@+id/btnSensors"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/bluetoothListView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/bluetoothTableLayout"
+        android:background="@color/colorBackground">
+
+    </ListView>
+
+    <TableLayout
+        android:id="@+id/sendTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bluetoothListView"
+        android:stretchColumns="0,1,2"
+        android:background="@color/colorSecondary"
+        android:elevation="2dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSendViaBluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:padding="20dp"
+                android:text="@string/txtYourAverage"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/textSizeDefault"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etSendViaBluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="@dimen/textSizeDefault"
+                android:hint="Insert"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_bluetooth_black_24dp"
+                android:elevation="@dimen/sizeElevButton"
+                android:text="@string/txtSend"
+                android:theme="@style/LauncherTheme.PrimaryButton"
+                app:layout_constraintBaseline_toBaselineOf="@+id/btnSensors"
+                app:layout_constraintEnd_toStartOf="@+id/btnSensors"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvFriendAverage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/sendTableLayout"
+        android:padding="20dp"
+        android:text="@string/txtYourFriend"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/textSizeDefault"
+        android:textStyle="bold"
+        android:background="@color/colorBackground"/>
+
+
+</RelativeLayout>

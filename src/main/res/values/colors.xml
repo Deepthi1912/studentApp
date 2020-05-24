@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0097a7</color>
+    <color name="colorSecondary">#80DEEA</color>
+    <color name="colorPrimaryDark">#006978</color>
+    <color name="colorAccent">#FFE082</color>
+    <color name="colorBackground">#E0F7FA</color>
+    <color name="colorTextPrimary">#2D2A2E</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <!-- Flag Activity -->
+    <color name="text_color">#000000</color>
+    <color name="background_color">#FFFFCC</color>
+    <color name="correct_answer">#00CC00</color>
+    <color name="incorrect_answer">#FF0000</color>
+
+    <!-- Ricerca Preferiti -->
+    <color name="light_orange">#8f90</color>
+
+    <!-- Snake -->
+    <color name="muted_red">#ff400010</color>
+    <color name="muted_yellow">#ff404000</color>
+    <color name="muted_blue">#ff100050</color>
+    <color name="muted_green">#ff004000</color>
+    <color name="text_violet">#ff8888ff</color>
+
+</resources>

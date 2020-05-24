@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".LauncherActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sizeToolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:elevation="@dimen/sizeElevButton"
+        android:text="@string/txtMainActivity"
+        android:textSize="@dimen/textButtonSizeDefault"
+        android:theme="@style/LauncherTheme.PrimaryButton"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:elevation="@dimen/sizeElevButton"
+        android:text="@string/txtAlarm"
+        android:textSize="@dimen/textButtonSizeDefault"
+        android:theme="@style/LauncherTheme.PrimaryButton"
+        app:layout_constraintStart_toStartOf="@+id/btnMainActivity"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainActivity" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:elevation="@dimen/sizeElevButton"
+        android:text="@string/txtContacts"
+        android:textSize="@dimen/textButtonSizeDefault"
+        android:theme="@style/LauncherTheme.PrimaryButton"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlarm" />
+
+    <Button
+        android:id="@+id/btnStudent"
+        android:layout_width="121dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:elevation="@dimen/sizeElevButton"
+        android:text="@string/txtStudent"
+        android:textSize="@dimen/textButtonSizeDefault"
+        android:theme="@style/LauncherTheme.PrimaryButton"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/btnContacts" />
+
+    <Button
+        android:id="@+id/btnCannonApp"
+        android:layout_width="121dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:elevation="@dimen/sizeElevButton"
+        android:text="@string/txtCannonApp"
+        android:textSize="@dimen/textButtonSizeDefault"
+        android:theme="@style/LauncherTheme.PrimaryButton"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/btnStudent" />
+
+    <Button
+        android:id="@+id/btnFavouriteResearch"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:elevation="@dimen/sizeElevButton"
+        android:text="@string/txtFavouriteResearch"
+        android:textSize="@dimen/textButtonSizeDefault"
+        android:theme="@style/LauncherTheme.PrimaryButton"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/btnCannonApp" />
+
+    <Button
+        android:id="@+id/btnFlagQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:elevation="@dimen/sizeElevButton"
+        android:text="@string/txtFlagQuiz"
+        android:textSize="@dimen/textButtonSizeDefault"
+        android:theme="@style/LauncherTheme.PrimaryButton"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/btnFavouriteResearch" />
+
+    <Button
+        android:id="@+id/btnSnake"
+        android:layout_width="121dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:elevation="@dimen/sizeElevButton"
+        android:text="@string/txtSnake"
+        android:textSize="@dimen/textButtonSizeDefault"
+        android:theme="@style/LauncherTheme.PrimaryButton"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/btnFlagQuiz" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="44dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="165dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

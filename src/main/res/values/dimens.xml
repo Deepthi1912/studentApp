@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizeDefault">16sp</dimen>
+    <dimen name="textSizeBluetoothList">14sp</dimen>
+    <dimen name="textButtonSizeDefault">14sp</dimen>
+    <dimen name="sizeEdTxtWidth">280dp</dimen>
+    <dimen name="sizeEdTxtHeight">50dp</dimen>
+    <dimen name="textSizeGradeActivity">25sp</dimen>
+    <dimen name="trPaddTxtDefault">12dp</dimen>
+    <dimen name="trPaddSkbDefault">7dp</dimen>
+    <dimen name="txtMarginRight">30dp</dimen>
+    <dimen name="txtGradeWidth">70dp</dimen>
+    <dimen name="textSizeGradeLandActivity">18sp</dimen>
+    <dimen name="trDefaultPaddingLand">5dp</dimen>
+    <dimen name="sizeButton">150dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="item_width">200dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="sizeElevAppbar">4dp</dimen>
+    <dimen name="sizeElevButton">2dp</dimen>
+    <dimen name="sizeToolbar">56dp</dimen>
+
+    <!-- Flag Activity -->
+    <dimen name="title_size">25sp</dimen>
+    <dimen name="flag_width">227dp</dimen>
+    <dimen name="flag_height">150dp</dimen>
+    <dimen name="answer_size">40sp</dimen>
+    <dimen name="text_size">20sp</dimen>
+
+    <!-- CannonApp -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+
+    <!-- Ricerca Preferiti -->
+    <dimen name="activity_horizontal_margin_rp">16dp</dimen>
+    <dimen name="activity_vertical_margin_rp">16dp</dimen>
+    <dimen name="tagButtonWidth">230dp</dimen>
+    <dimen name="editButtonWidth">50dp</dimen>
+    <dimen name="app_font">14sp</dimen>
+
+</resources>

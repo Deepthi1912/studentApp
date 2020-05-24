@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
+
+    <EditText
+        android:id="@+id/editTextChooseSubject"
+        android:layout_width="@dimen/sizeEdTxtWidth"
+        android:layout_height="@dimen/sizeEdTxtHeight"
+        android:layout_marginTop="257dp"
+        android:layout_marginBottom="53dp"
+        android:ems="10"
+        android:hint="@string/txtChooseSubject"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextExNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="183dp"
+        android:text="@string/txtBtnApply"
+        android:theme="@style/LauncherTheme.PrimaryButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextExNumber" />
+
+    <EditText
+        android:id="@+id/editTextExNumber"
+        android:layout_width="@dimen/sizeEdTxtWidth"
+        android:layout_height="@dimen/sizeEdTxtHeight"
+        android:layout_marginBottom="90dp"
+        android:ems="10"
+        android:hint="@string/txtExNumber"
+        android:inputType="number"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintBottom_toTopOf="@+id/btnApply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextChooseSubject" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlbMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/LauncherTheme"
+        app:titleTextColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

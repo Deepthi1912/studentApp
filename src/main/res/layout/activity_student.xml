@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".StudentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/studentToolbar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:elevation="@dimen/sizeElevAppbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/tvName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="69dp"
+        android:text="@string/txtName"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTxtAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/txtAverage"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintStart_toStartOf="@+id/editTxtTodoExams"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTodoExams" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/txtEmail"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCellphone" />
+
+    <TextView
+        android:id="@+id/tvTodoExams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/txtTodoExams"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvExamsDone" />
+
+    <EditText
+        android:id="@+id/editTxtExamsDone"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="63dp"
+        android:ems="10"
+        android:hint="@string/txtExamsDone"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtAverage"
+        app:layout_constraintStart_toStartOf="@+id/rgGender"
+        app:layout_constraintTop_toTopOf="@+id/tvGender" />
+
+    <EditText
+        android:id="@+id/editTxtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:ems="10"
+        android:hint="@string/txtEmail"
+        android:importantForAutofill="no"
+        android:inputType="textWebEmailAddress"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtExamsDone"
+        app:layout_constraintStart_toStartOf="@+id/editTxtCellphone"
+        app:layout_constraintTop_toBottomOf="@+id/tvWebsite" />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="59dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTxtExamsDone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvGender"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtCellphone">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:text="@string/txtMale" />
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:text="@string/txtFemale" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTxtBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="@string/txtBirth"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtWebsite"
+        app:layout_constraintStart_toStartOf="@+id/editTxtSurname"
+        app:layout_constraintTop_toTopOf="@+id/tvBirth" />
+
+    <TextView
+        android:id="@+id/tvExamsDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="43dp"
+        android:text="@string/txtExamsDone"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+    <EditText
+        android:id="@+id/editTxtCellphone"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="83dp"
+        android:ems="10"
+        android:hint="@string/txtCellphone"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|phone"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGender"
+        app:layout_constraintStart_toStartOf="@+id/editTxtWebsite"
+        app:layout_constraintTop_toBottomOf="@+id/tvBirth" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="83dp"
+        android:text="@string/txtGender"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintEnd_toStartOf="@+id/rgGender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <TextView
+        android:id="@+id/tvCellphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/txtCellphone"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWebsite" />
+
+    <TextView
+        android:id="@+id/tvAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/txtAverage"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTodoExams" />
+
+    <TextView
+        android:id="@+id/tvSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/txtSurname"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <EditText
+        android:id="@+id/editTxtWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginBottom="102dp"
+        android:ems="10"
+        android:hint="@string/txtWebsite"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintBottom_toBottomOf="@+id/editTxtEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTxtBirth"
+        app:layout_constraintTop_toTopOf="@+id/tvSurname" />
+
+    <TextView
+        android:id="@+id/tvWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/txtWebsite"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBirth" />
+
+    <EditText
+        android:id="@+id/editTxtSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="54dp"
+        android:ems="10"
+        android:hint="@string/txtSurname"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintBottom_toBottomOf="@+id/editTxtBirth"
+        app:layout_constraintStart_toStartOf="@+id/editTxtName"
+        app:layout_constraintTop_toTopOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/txtBirth"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSurname" />
+
+    <EditText
+        android:id="@+id/editTxtTodoExams"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/txtTodoExams"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTodoExams"
+        app:layout_constraintStart_toStartOf="@+id/editTxtExamsDone"
+        app:layout_constraintTop_toBottomOf="@+id/tvTodoExams" />
+
+    <EditText
+        android:id="@+id/editTxtName"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/textSizeDefault"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtSurname"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtExamsDone"
+        app:layout_constraintStart_toStartOf="@+id/rgGender"
+        app:layout_constraintTop_toBottomOf="@+id/studentToolbar" />
+
+    <ToggleButton
+        android:id="@+id/tbModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="@dimen/sizeElevButton"
+        android:text="@string/txtModify"
+        android:textColor="@color/colorAccent"
+        android:textOff="@string/txtModify"
+        android:textOn="@string/txtClear"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnExams"
+        app:layout_constraintEnd_toStartOf="@+id/btnExams"
+        app:layout_constraintStart_toEndOf="@+id/btnSensors" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnExams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="27dp"
+        android:elevation="@dimen/sizeElevButton"
+        android:text="@string/txtExams"
+        android:theme="@style/LauncherTheme.PrimaryButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tbModify" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_save_black_24dp"
+        android:elevation="@dimen/sizeElevButton"
+        android:text="@string/txtSave"
+        android:theme="@style/LauncherTheme.PrimaryButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSensors"
+        app:layout_constraintEnd_toStartOf="@+id/btnSensors"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSensors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="@string/txtSensors"
+        android:theme="@style/LauncherTheme.SecondaryButton"
+        app:layout_constraintEnd_toStartOf="@+id/tbModify"
+        app:layout_constraintStart_toEndOf="@+id/btnSave"
+        app:layout_constraintTop_toTopOf="@+id/tbModify" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

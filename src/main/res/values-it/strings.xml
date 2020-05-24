@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="numberOfExercises">
+        <item quantity="one">Esercitazione</item>
+        <item quantity="other">Esercitazioni</item>
+    </plurals>
+    <string name="app_name">Giannelli</string>
+    <string name="name">Nome</string>
+    <string name="txtBtnApply">Applica</string>
+    <string name="txtBtnClear">Svuota</string>
+    <string name="txtChooseSubject">Scegli una materia</string>
+    <string name="txtEmpty">- vuoto -</string>
+    <string name="txtExNumber">Numero di esercitazioni previste</string>
+    <string name="txtHelloWorld">Benvenuti!</string>
+    <string name="txtWriteHere">Scrivi qui</string>
+    <string name="txtSubjectGrade">Voto %1$s</string>
+    <string name="txtBtnBack">Indietro</string>
+    <string name="txtExerTsk">%1$s %2$s (/3)</string>
+    <string name="txtFinalGrade">Voto finale:</string>
+    <string name="txtOralTsk">Voto orale (/6)</string>
+    <string name="txtWrTsk">Voto scritto (/24)</string>
+    <string name="txtClock">Orologio</string>
+    <string name="txtContacts">Contatti</string>
+    <string name="txtInsertAlarm">Inserisci l\'orario per la sveglia:</string>
+    <string name="txtAlarm">Sveglia</string>
+    <string name="txtMainActivity">Activity Principale</string>
+    <string name="txtSecondActivity">Activity Secondaria</string>
+    <string name="txtInsertHour">Inserisci l\'ora</string>
+    <string name="txtInsertMinutes">Inserisci i minuti</string>
+    <string name="txtSetAlarm">Imposta Sveglia</string>
+    <string name="txtAlarmSet">Sveglia impostata alle %1$s:%2$s</string>
+    <string name="txtInsertTime">Inserisci l\'ora e i minuti</string>
+    <string name="txtMotto">Motto</string>
+    <string name="txtName">Nome</string>
+    <string name="txtGender">Sesso</string>
+    <string name="txtFemale">F</string>
+    <string name="txtMale">M</string>
+    <string name="txtSensors">Sensori</string>
+    <string name="txtSurname">Cognome</string>
+    <string name="txtTodoExams">Esami da fare</string>
+    <string name="txtWebsite">Sito web</string>
+    <string name="txtExamsDone">Esami svolti</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtCellphone">Cellulare</string>
+    <string name="txtBirth">Data di nascita</string>
+    <string name="txtAverage">Media</string>
+    <string name="txtModify">Modifica</string>
+    <string name="txtClear">Pulisci</string>
+    <string name="txtStudent">Studente</string>
+    <string name="title_sensor_list">Sensori</string>
+    <string name="title_sensor_detail">Dettaglio</string>
+    <string name="txtSuccessSave">Salvato con successo in %1$s</string>
+
+    <!-- Stringhe servizio activities esami -->
+    <string name="txtEsamiSvolti">Exams Done</string>
+    <string name="txtSave">Save</string>
+    <string name="txtExams">Exams</string>
+    <string name="txtExamsList">Exams List</string>
+    <string name="txtStats">Stats</string>
+
+    <!-- Esami -->
+    <string name="txtArchitettura">Architettura degli Elaboratori e SO</string>
+    <string name="txtMatematicaDiscreta">Matematica Discreta</string>
+    <string name="txtProgrammazione">Programmazione</string>
+    <string name="txtAnalisiMatematica">Analisi Matematica</string>
+    <string name="txtLinguaggiDiProgrammazione">Linguaggi di Programmazione</string>
+    <string name="txtLaboratorioDiInformatica">Laboratorio di Informatica</string>
+    <string name="txtLinguaInglese">Lingua Inglese</string>
+    <string name="txtProgrammazione2">Programmazione 2</string>
+    <string name="txtProgettazioneDiBasiDiDati">Progettazione di Basi di Dati</string>
+    <string name="txtCalcoloNumerico">Calcolo Numerico</string>
+    <string name="txtRetiDiCalcolatori">Reti di Calcolatori</string>
+    <string name="txtIngegneriaDelSoftware">Ingegneria del Software</string>
+    <string name="txtFisicaApplicataAllInformatica">Fisica applicata all\'Informatica</string>
+    <string name="txtStatisticaPerLIngegneriaDelSoftware">Statistica per l\'Ingegneria del Software</string>
+    <string name="txtEconomiaEGestioneDImpresa">Economia e Gestione d\'Impresa</string>
+    <string name="txtModelliEMetodi">Modelli e Metodi</string>
+    <string name="txtIntegrazioneETest">Integrazione e Test</string>
+    <string name="txtProgettazioneEInterazioneConLUtente">Progettazione e Interazione con l\'Utente</string>
+    <string name="txtSviluppoDiMobileSoftware">Sviluppo di Mobile Software</string>
+    <string name="txtDataMining">Data Mining</string>
+    <string name="txtSistemiInformativi">Sistemi Informativi</string>
+    <string name="txtDidattica">Didattica</string>
+
+    <!-- Corso di Studi -->
+    <string name="txtCorso">Informatica e T.P.S.</string>
+
+    <!-- Statistiche -->
+    <string name="txtTvMediaAritmetica">Media Aritmetica: %1$s</string>
+    <string name="txtTvMediaPonderata">Media Ponderata: %1$s</string>
+    <string name="txtTvVotoDiLaurea">Base di Laurea: %1$s</string>
+
+    <!-- Bluetooth Activity -->
+    <string name="txtIsEnabled">Abilitato</string>
+    <string name="txtIsVisible">Visibile</string>
+    <string name="txtListBluetoothDevices">Lista dei dispositivi:</string>
+    <string name="txtListPairedDevices">Dispositivi accoppiati:</string>
+    <string name="txtScan">Scansiona</string>
+    <string name="txtShow">Mostra</string>
+    <string name="txtBluetoothNotSupported">Bluetooth non supportato</string>
+    <string name="txtBNSDescription">Tornerai al menu principale</string>
+    <string name="txtOk">OK</string>
+    <string name="txtConnectionOk">Connessione riuscita!</string>
+    <string name="txtBetterAverage">Laricchia ha la media migliore!</string>
+    <string name="txtYourFriend">La media del tuo collega: %1$s</string>
+    <string name="txtYourAverage">La tua media: </string>
+    <string name="txtInsert">Inserisci</string>
+    <string name="txtSend">Invia</string>
+
+    <!-- CFU Esami -->
+    <string name="txtCFUArchitettura">9</string>
+    <string name="txtCFUMatematicaDiscreta">9</string>
+    <string name="txtCFUProgrammazione">9</string>
+    <string name="txtCFUAnalisiMatematica">9</string>
+    <string name="txtCFULinguaggiDiProgrammazione">9</string>
+    <string name="txtCFULaboratorioDiInformatica">9</string>
+    <string name="txtCFULinguaInglese">0</string>
+    <string name="txtCFUProgrammazione2">9</string>
+    <string name="txtCFUProgettazioneDiBasiDiDati">9</string>
+    <string name="txtCFUCalcoloNumerico">6</string>
+    <string name="txtCFURetiDiCalcolatori">9</string>
+    <string name="txtCFUIngegneriaDelSoftware">12</string>
+    <string name="txtCFUFisicaApplicataAllInformatica">6</string>
+    <string name="txtCFUStatisticaPerLIngegneriaDelSoftware">6</string>
+    <string name="txtCFUEconomiaEGestioneDImpresa">6</string>
+    <string name="txtCFUModelliEMetodi">9</string>
+    <string name="txtCFUIntegrazioneETest">6</string>
+    <string name="txtCFUProgettazioneEInterazioneConLUtente">6</string>
+    <string name="txtCFUSviluppoDiMobileSoftware">9</string>
+    <string name="txtCFUDataMining">9</string>
+    <string name="txtCFUSistemiInformativi">6</string>
+    <string name="txtCFUDidattica">6</string>
+
+    <!-- Anno Esami -->
+    <string name="txtAnnoArchitettura">1</string>
+    <string name="txtAnnoMatematicaDiscreta">1</string>
+    <string name="txtAnnoProgrammazione">1</string>
+    <string name="txtAnnoAnalisiMatematica">1</string>
+    <string name="txtAnnoLinguaggiDiProgrammazione">1</string>
+    <string name="txtAnnoLaboratorioDiInformatica">1</string>
+    <string name="txtAnnoLinguaInglese">1</string>
+    <string name="txtAnnoProgrammazione2">2</string>
+    <string name="txtAnnoProgettazioneDiBasiDiDati">2</string>
+    <string name="txtAnnoCalcoloNumerico">2</string>
+    <string name="txtAnnoRetiDiCalcolatori">2</string>
+    <string name="txtAnnoIngegneriaDelSoftware">2</string>
+    <string name="txtAnnoFisicaApplicataAllInformatica">2</string>
+    <string name="txtAnnoStatisticaPerLIngegneriaDelSoftware">2</string>
+    <string name="txtAnnoEconomiaEGestioneDImpresa">2</string>
+    <string name="txtAnnoModelliEMetodi">3</string>
+    <string name="txtAnnoIntegrazioneETest">3</string>
+    <string name="txtAnnoProgettazioneEInterazioneConLUtente">3</string>
+    <string name="txtAnnoSviluppoDiMobileSoftware">3</string>
+    <string name="txtAnnoDataMining">3</string>
+    <string name="txtAnnoSistemiInformativi">3</string>
+    <string name="txtAnnoDidattica">3</string>
+
+    <!-- Semestre Esami -->
+    <string name="txtSemestreArchitettura">1</string>
+    <string name="txtSemestreMatematicaDiscreta">1</string>
+    <string name="txtSemestreProgrammazione">1</string>
+    <string name="txtSemestreAnalisiMatematica">2</string>
+    <string name="txtSemestreLinguaggiDiProgrammazione">2</string>
+    <string name="txtSemestreLaboratorioDiInformatica">2</string>
+    <string name="txtSemestreLinguaInglese">2</string>
+    <string name="txtSemestreProgrammazione2">1</string>
+    <string name="txtSemestreProgettazioneDiBasiDiDati">1</string>
+    <string name="txtSemestreCalcoloNumerico">1</string>
+    <string name="txtSemestreRetiDiCalcolatori">1</string>
+    <string name="txtSemestreIngegneriaDelSoftware">2</string>
+    <string name="txtSemestreFisicaApplicataAllInformatica">2</string>
+    <string name="txtSemestreStatisticaPerLIngegneriaDelSoftware">2</string>
+    <string name="txtSemestreEconomiaEGestioneDImpresa">2</string>
+    <string name="txtSemestreModelliEMetodi">1</string>
+    <string name="txtSemestreIntegrazioneETest">1</string>
+    <string name="txtSemestreProgettazioneEInterazioneConLUtente">1</string>
+    <string name="txtSemestreSviluppoDiMobileSoftware">1</string>
+    <string name="txtSemestreDataMining">2</string>
+    <string name="txtSemestreSistemiInformativi">2</string>
+    <string name="txtSemestreDidattica">2</string>
+
+    <!-- Esami Svolti -->
+    <string name="txtDoneArchitettura">Architettura degli Elaboratori e SO</string>
+    <string name="txtDoneMatematicaDiscreta">Matematica Discreta</string>
+    <string name="txtDoneProgrammazione">Programmazione</string>
+    <string name="txtDoneAnalisiMatematica">Analisi Matematica</string>
+
+    <!-- Data Svolgimento Esame-->
+    <string name="txtDateArchitettura">27/02/2016</string>
+    <string name="txtDateMatematicaDiscreta">21/02/2016</string>
+    <string name="txtDateProgrammazione">13/01/2016</string>
+    <string name="txtDateAnalisiMatematica">16/04/2017</string>
+
+    <!-- Voto Conseguito Esame Esame-->
+    <string name="txtGradeArchitettura">24</string>
+    <string name="txtGradeMatematicaDiscreta">26</string>
+    <string name="txtGradeProgrammazione">22</string>
+    <string name="txtGradeAnalisiMatematica">28</string>
+    <string name="txtBluetooth">Bluetooth</string>
+
+    <!-- Mini App Collection -->
+    <string name="txtCannonApp">Cannone</string>
+    <string name="txtFavouriteResearch">Ricerca Preferiti</string>
+    <string name="txtFlagQuiz">Gioco delle Bandiere</string>
+    <string name="txtSnake">Snake</string>
+
+    <!-- Flag Activity -->
+    <string name="choices">Seleziona numero di scelte</string>
+    <string name="correct">corretto</string>
+    <string name="flag">Bandiera</string>
+    <string name="guess_country">Indovina la nazione</string>
+    <string name="guesses">Indovinate</string>
+    <string name="incorrect_answer">Sbagliato!</string>
+    <string name="more_regions_title">Sono richieste più regioni</string>
+    <string name="more_regions_message">Non ci sono abbastanza paesi in queste regioni.
+        Seleziona più regioni.</string>
+    <string name="of">di</string>
+    <string name="ok">OK</string>
+    <string name="question">Domanda</string>
+    <string name="quiz_title">Quiz delle dieci bandiere</string>
+    <string name="regions">Seleziona le regioni</string>
+    <string name="reset_quiz">Resetta Quiz</string>
+    <string name="txtFlagActivity">Gioco delle bandiere</string>
+    <string-array name="regionsList">
+        <item>Africa</item>
+        <item>Asia</item>
+        <item>Europa</item>
+        <item>Nord_America</item>
+        <item>Oceania</item>
+        <item>Sud_America</item>
+    </string-array>
+    <string-array name="guessesList">
+        <item>3</item>
+        <item>6</item>
+        <item>9</item>
+    </string-array>
+
+    <!-- CannonApp -->
+    <string name="results_format">
+      Shots fired: %1$d\nTempo totale: %2$.1f</string>
+    <string name="reset_game">Resetta il gioco</string>
+    <string name="win">Hai vinto!</string>
+    <string name="lose">Hai perso!</string>
+    <string name="time_remaining_format">
+      Tempo rimanente: %.1f secondi</string>
+
+    <!-- Ricerca Preferiti-->
+    <string name="searchURL">http://www.google.it/search?q=</string>
+    <string name="tagPrompt">Contrassegna la tua domanda</string>
+    <string name="queryPrompt">Inserisci la query di richiesta</string>
+    <string name="taggedSearches">Ricerche contrassegnate</string>
+    <string name="edit">Modifica</string>
+    <string name="clearTags">Pulisci contrassegni</string>
+    <string name="save">Salva</string>
+    <string name="erase">Elimina</string>
+    <string name="cancel">Cancella</string>
+    <string name="OK">OK</string>
+    <string name="missingTitle">Testo Mancante</string>
+    <string name="missingMessage">
+      Inserisci la tua query di richiesta e contrassegnala.</string>
+    <string name="confirmTitle">Sei sicuro?</string>
+    <string name="confirmMessage">
+      Questo eliminerà tutte le ricerche salvate</string>
+
+    <!-- Snake -->
+    <string name="mode_ready">Snake\nPremi \"Su\" per giocare</string>
+    <string name="mode_pause">Pausa\nPremi \"Su\" per riprendere</string>
+    <string name="mode_lose">Fine!\nPunteggio: %1$d \nPremi \"Su\" per giocare</string>
+
+</resources>

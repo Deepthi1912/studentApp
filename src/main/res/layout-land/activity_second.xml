@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <!-- Riga contenente testo "Voto Materia" -->
+    <TableRow
+        android:id="@+id/trSubjectGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Testo "Voto Materia" -->
+        <TextView
+            android:id="@+id/textViewSubjectGrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:text="@string/txtSubjectGrade"
+            android:textAlignment="center"
+            android:textSize="@dimen/textSizeGradeActivity"
+            tools:targetApi="o" />
+    </TableRow>
+
+    <!-- Riga contenente Voto Scritto e campo, Voto Esercitazione e campo -->
+    <TableRow
+        android:id="@+id/trWrTaskGrade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/trDefaultPaddingLand">
+
+        <!-- Testo "Voto Scritto" -->
+        <TextView
+            android:id="@+id/textViewWrTsk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/txtMarginRight"
+            android:text="@string/txtWrTsk"
+            android:textSize="@dimen/textSizeGradeLandActivity" />
+
+        <!-- Valore intero voto scritto della materia -->
+        <EditText
+            android:id="@+id/editTextWrTskGrade"
+            android:layout_width="@dimen/txtGradeWidth"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/txtMarginRight"
+            android:hint="@string/txtSubjectGrade"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/trPaddTxtDefault" />
+
+        <!-- Riga contenente testo "Voto Esercitazioni" -->
+        <TextView
+            android:id="@+id/textViewExerTsk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/txtMarginRight"
+            android:text="@string/txtExerTsk"
+            android:textSize="@dimen/textSizeGradeLandActivity" />
+
+        <!-- Valore intero voto esercitazioni -->
+        <EditText
+            android:id="@+id/editTextExerTskGrade"
+            android:layout_width="@dimen/txtGradeWidth"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtSubjectGrade"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/trPaddTxtDefault" />
+    </TableRow>
+
+    <!-- Riga Seekbar Voto Scritto -->
+    <TableRow
+        android:id="@+id/trWrTskGradeSB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/trPaddSkbDefault"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="3">
+
+        <!-- Seekbar Voto Scritto -->
+        <SeekBar
+            android:id="@+id/skbWrTskGrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:min="18"
+            android:max="24"
+            android:progress="20"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"/>
+
+        <!-- Seekbar Voto Esercitazioni -->
+        <SeekBar
+            android:id="@+id/skbExerTskGrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="1"
+            android:layout_weight="2"/>
+    </TableRow>
+
+    <!-- Riga contenente Voto Orale e campo, Voto Finale e campo -->
+    <TableRow
+        android:id="@+id/trOralTaskGrade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/trDefaultPaddingLand">
+
+        <!-- Riga contenente testo "Voto Materia" -->
+        <TextView
+            android:id="@+id/textViewOralTsk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/txtMarginRight"
+            android:text="@string/txtOralTsk"
+            android:textSize="@dimen/textSizeGradeLandActivity" />
+
+        <!-- Valore intero voto orale della materia -->
+        <EditText
+            android:id="@+id/editTextOralTskGrade"
+            android:layout_width="@dimen/txtGradeWidth"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/txtMarginRight"
+            android:hint="@string/txtSubjectGrade"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/trPaddTxtDefault" />
+
+        <!-- Riga contenente testo "Voto Esercitazioni" -->
+        <TextView
+            android:id="@+id/textViewFinalTsk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/txtMarginRight"
+            android:text="@string/txtFinalGrade"
+            android:textSize="@dimen/textSizeGradeLandActivity" />
+
+        <!-- Valore intero voto finale della materia -->
+        <EditText
+            android:id="@+id/editTextFinalTskGrade"
+            android:layout_width="@dimen/txtGradeWidth"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtSubjectGrade"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:padding="@dimen/trPaddTxtDefault" />
+    </TableRow>
+
+    <!-- Riga Seekbar Voto Orale -->
+    <TableRow
+        android:id="@+id/trOralTskGradeSB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/trPaddSkbDefault"
+        android:gravity="fill_horizontal">
+
+        <!-- Seekbar Voto Orale -->
+        <SeekBar
+            android:id="@+id/skbOralTskGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="6"
+            android:progress="3"/>
+    </TableRow>
+
+    <!-- Riga contenente Pulsante "Indietro" -->
+
+    <TableRow
+        android:id="@+id/trBtnBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="@dimen/trPaddSkbDefault">
+
+        <!-- Pulsante "Indietro" -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtBtnBack"
+            android:layout_marginVertical="@dimen/trPaddSkbDefault"/>
+    </TableRow>
+
+</TableLayout>
